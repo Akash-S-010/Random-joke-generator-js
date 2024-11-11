@@ -49,6 +49,7 @@ body {
     padding: 6px 25px;
     font-weight: 500;
     border-radius: 5px;
+    cursor: pointer;
     transition: .3s;
 }
 .btn:active{
