@@ -13,7 +13,6 @@ body {
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
-
 }
 .container{
     background-color: white;
@@ -25,7 +24,7 @@ body {
 }
 .container h1::after{
     content: "";
-    width: 200px;
+    width: 150px;
     height: 3px;
     display: block;
     margin: 18px auto 0;
@@ -37,7 +36,9 @@ body {
 .joke-field{
     font-size: 20px;
     text-align: center;
-    line-height: 28px;
+    line-height: 30px;
+    font-weight: 700;
+    word-wrap: break-word;
 }
 .btn{
     background-color:  #fc5e03;
@@ -50,6 +51,22 @@ body {
     border-radius: 5px;
     transition: .3s;
 }
-.btn:hover{
+.btn:active{
     background-color: black;
 }
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #fc5e03;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
